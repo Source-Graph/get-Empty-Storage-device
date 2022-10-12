@@ -1,0 +1,9 @@
+---
+- hosts: node
+  vars:
+    use_lvm: false
+    filesystem: "xfs"
+
+  roles:
+  - get Empty Storage device
+  # - format brick
